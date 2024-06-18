@@ -104,6 +104,7 @@ namespace CRUD_application_2.Controllers
             var user = userlist.FirstOrDefault(u => u.Id == id);
             if (user == null)
             {
+
                 return HttpNotFound();
             }
             userlist.Remove(user);
